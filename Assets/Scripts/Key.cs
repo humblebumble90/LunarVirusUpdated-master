@@ -11,11 +11,12 @@ public class Key : MonoBehaviour {
     {
         mc = GameObject.Find("Astronaut");
         door = GameObject.Find("openDoor");
-       
-        if (co.name == "Astronaut")
 
+        if (co.name == "Astronaut")
+        {
             Destroy(gameObject);
-        door.GetComponent<openDoor>().havingKey();
+            door.GetComponent<openDoor>().havingKey();
+        }
    
     
         

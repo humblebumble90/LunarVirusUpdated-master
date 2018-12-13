@@ -3,36 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class openDoor : MonoBehaviour {
+    bool getkey;
     GameObject door;
 
-    bool getKey;
-    void Start()
-    {
-        getKey = false;
-    }
-
+	// Use this for initialization
+	void Start () {
+        getkey = false;
+	}
+	
+	// Update is called once per frame
+	void Update () {
+        Debug.Log(getkey);
+	}
     public void havingKey()
-        {
-        getKey = true;
-
-    }
-
-    void OnTriggerEnter2D(Collider2D co)
     {
-
-        door = GameObject.FindGameObjectWithTag("Door");
-        if (co.tag == "Door" && getKey == true)
-        {
-         Destroy(co.gameObject);
-            getKey = false;
-        }
-
-        
-       
-       
-            
-           
-     
+        getkey = true;
     }
-     
+    private void OnTriggerEnter2D(Collider2D co)
+    { door = GameObject.FindGameObjectWithTag("Door");
+        if (getkey == true & co.tag =="Door" )
+        {
+            Destroy(co.gameObject);
+            getkey = false;
+        }
+    }
 }
