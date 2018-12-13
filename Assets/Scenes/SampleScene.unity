@@ -1183,14 +1183,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 209123436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efa66ca081e45c6468c8bef2492d3e23, type: 3}
+  m_Script: {fileID: 11500000, guid: 028a3c1d2e4ce04489a6414664bf61c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionAsteroid: {fileID: 1716149776704098, guid: cfc564d6ecb3c594d88c8dcaa8920a6b,
-    type: 2}
-  explosionPlayer: {fileID: 1546148998853910, guid: 44e483d6151965c42a8cad3c2d61a60f,
-    type: 2}
-  gameControllerScript: {fileID: 0}
 --- !u!1 &212075987
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,14 +2860,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 528962109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efa66ca081e45c6468c8bef2492d3e23, type: 3}
+  m_Script: {fileID: 11500000, guid: 028a3c1d2e4ce04489a6414664bf61c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionAsteroid: {fileID: 1716149776704098, guid: cfc564d6ecb3c594d88c8dcaa8920a6b,
-    type: 2}
-  explosionPlayer: {fileID: 1546148998853910, guid: 44e483d6151965c42a8cad3c2d61a60f,
-    type: 2}
-  gameControllerScript: {fileID: 0}
 --- !u!1 &547424995
 GameObject:
   m_ObjectHideFlags: 0
@@ -3503,7 +3493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.6, y: 16.6}
+  m_AnchoredPosition: {x: 3.1, y: -60}
   m_SizeDelta: {x: 175.2, y: 63.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &674792159
@@ -3830,14 +3820,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 793146853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efa66ca081e45c6468c8bef2492d3e23, type: 3}
+  m_Script: {fileID: 11500000, guid: 028a3c1d2e4ce04489a6414664bf61c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionAsteroid: {fileID: 1716149776704098, guid: cfc564d6ecb3c594d88c8dcaa8920a6b,
-    type: 2}
-  explosionPlayer: {fileID: 1546148998853910, guid: 44e483d6151965c42a8cad3c2d61a60f,
-    type: 2}
-  gameControllerScript: {fileID: 0}
 --- !u!1 &805268554
 GameObject:
   m_ObjectHideFlags: 0
@@ -8648,14 +8633,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1648339198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efa66ca081e45c6468c8bef2492d3e23, type: 3}
+  m_Script: {fileID: 11500000, guid: 028a3c1d2e4ce04489a6414664bf61c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionAsteroid: {fileID: 1716149776704098, guid: cfc564d6ecb3c594d88c8dcaa8920a6b,
-    type: 2}
-  explosionPlayer: {fileID: 1546148998853910, guid: 44e483d6151965c42a8cad3c2d61a60f,
-    type: 2}
-  gameControllerScript: {fileID: 0}
 --- !u!4 &1652610280 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4253175440607514, guid: fdd07f03909df1143a74fa83cd8c4fd1,

@@ -77,6 +77,7 @@ public class PlayerControllerP : MonoBehaviour
         
             if (hp < 0)
             { Destroy(gameObject);
+            gc.GetComponent<GameController>().GameOver();
             }
 
 

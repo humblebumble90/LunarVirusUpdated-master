@@ -30,6 +30,7 @@ public class DestroyByContact : MonoBehaviour
     // and colliders with this object
     void OnTriggerEnter2D(Collider2D other)
     {
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
         if (other.tag == "Boundary")
         {
             // Debug.Log(other.gameObject.name + "HIT ME!!!!");
