@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AlienMover.cs" />
     <Compile Include="Assets\Scripts\AlienShootLaser.cs" />
+    <Compile Include="Assets\Scripts\ChemicalHazard.cs" />
     <Compile Include="Assets\Scripts\DestroyByContact.cs" />
     <Compile Include="Assets\Scripts\DestroybycontactD.cs" />
     <Compile Include="Assets\Scripts\DestroybycontactP.cs" />

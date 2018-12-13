@@ -10,6 +10,7 @@ public class AlienMover : MonoBehaviour
     public float speed = 0.1f;
     GameObject[] laser;
     int Hp = 5;
+    GameObject gc;
 
 
 
@@ -17,7 +18,9 @@ public class AlienMover : MonoBehaviour
     {
         if (Hp == 0)
         {
+            gc = GameObject.FindGameObjectWithTag("GameController");
             Destroy(gameObject);
+            gc.GetComponent<GameController>().AddScore(5);
         }
         // Waypoint not reached yet? then move closer
         if (transform.position != waypoints[cur].position)
@@ -37,10 +40,12 @@ public class AlienMover : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+      
         laser = GameObject.FindGameObjectsWithTag("Laser");
         if (collision.tag == "Laser")
         {
             Hp--;
+            
         }
     }
 

@@ -17,9 +17,12 @@ public class PlayerControllerP : MonoBehaviour
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
     GameObject[] hazard;
-    int hp = 10;
-   
-   
+    int hp;
+    GameObject gc;
+    
+
+
+
 
     private Rigidbody2D rb2d;
     private float myTime = 0f;
@@ -28,11 +31,13 @@ public class PlayerControllerP : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+      
         rb2d = GetComponent<Rigidbody2D>();
-       
+        hp = 100;
 
     }
+    void updateHp()
+    { }
     
     // Update is called once per frame
     void Update()
@@ -61,7 +66,7 @@ public class PlayerControllerP : MonoBehaviour
 
 
 
-        Debug.Log(myTime);
+     
         
 
     }
@@ -70,7 +75,7 @@ public class PlayerControllerP : MonoBehaviour
     {
 
         
-            if (hp == 0)
+            if (hp < 0)
             { Destroy(gameObject);
             }
 
@@ -107,12 +112,17 @@ public class PlayerControllerP : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D co)
     {
+        gc = GameObject.FindGameObjectWithTag("GameController");
         hazard = GameObject.FindGameObjectsWithTag("Hazard");
         if (co.tag == "Hazard")
         {
-            hp -= hp;
+            hp = hp - 1;
             Debug.Log(hp);
+            gc.GetComponent<GameController>().hpNumber(1);
+            
+            
         }
+       
 
         
     }

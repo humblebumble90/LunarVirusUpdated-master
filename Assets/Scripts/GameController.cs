@@ -11,8 +11,10 @@ public class GameController : MonoBehaviour
     public Text scoreText;
     public Text gameOverText;
     public Text restartText;
+    public Text hpText;
 
     private int score;
+    private int hp;
     private bool gameOver;
     private bool restart;
 
@@ -22,10 +24,13 @@ public class GameController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        hp = 100;
         score = 0;
         gameOver = false;
         restart = false;
         UpdateScore();
+        hpTextnumber();
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
 
     }
 
@@ -71,6 +76,15 @@ public class GameController : MonoBehaviour
         UpdateScore();
     }
 
+    void hpTextnumber()
+    {
+        hpText.text = "Hp : " + hp;
+    }
+    public void hpNumber(int newHpValue)
+    {
+        hp -= newHpValue;
+        hpTextnumber();
+    }
     void UpdateScore()
     {
         scoreText.text = "Score: " + score;
