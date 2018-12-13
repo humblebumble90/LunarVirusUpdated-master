@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\DestroyObjectD.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
+    <Compile Include="Assets\Scripts\LaserDestroyer.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
     <Compile Include="Assets\Scripts\NothingTest.cs" />
     <Compile Include="Assets\Scripts\openDoor.cs" />
@@ -77,16 +78,16 @@
     <Compile Include="Assets\Scripts\PlayerControllerP.cs" />
     <None Include="Assets\Sprites\new-explosionb (1)\new-explosionb\explosion.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/phillip/Desktop/college/project3/Safe/LunarVirusUpdated-master/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/phillip/Desktop/college/project3/LunarVirusUpdated-master/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/phillip/Desktop/college/project3/Safe/LunarVirusUpdated-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/phillip/Desktop/college/project3/LunarVirusUpdated-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/phillip/Desktop/college/project3/Safe/LunarVirusUpdated-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/phillip/Desktop/college/project3/LunarVirusUpdated-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/phillip/Desktop/college/project3/Safe/LunarVirusUpdated-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/phillip/Desktop/college/project3/LunarVirusUpdated-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -269,7 +270,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Unity.Settings">
-      <HintPath>C:/Users/phillip/Desktop/college/project3/Safe/LunarVirusUpdated-master/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+      <HintPath>C:/Users/phillip/Desktop/college/project3/LunarVirusUpdated-master/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

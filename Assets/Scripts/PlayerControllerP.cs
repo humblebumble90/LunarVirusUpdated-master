@@ -16,6 +16,8 @@ public class PlayerControllerP : MonoBehaviour
     public Transform groundCheck;
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
+    GameObject[] hazard;
+    int hp = 10;
    
    
 
@@ -66,18 +68,19 @@ public class PlayerControllerP : MonoBehaviour
 
     void FixedUpdate()
     {
-        grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+
+        
+            if (hp == 0)
+            { Destroy(gameObject);
+            }
 
 
 
 
 
 
-
-
-
-
-       
+            grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+                                           
         float horiz = Input.GetAxis("Horizontal");
 
       
@@ -102,12 +105,20 @@ public class PlayerControllerP : MonoBehaviour
 
 
     }
-
- 
-    void JumpFalse()
+    void OnTriggerEnter2D(Collider2D co)
     {
-       
+        hazard = GameObject.FindGameObjectsWithTag("Hazard");
+        if (co.tag == "Hazard")
+        {
+            hp -= hp;
+            Debug.Log(hp);
+        }
+
+        
     }
+
+
+
 
 
 

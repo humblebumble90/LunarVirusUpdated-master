@@ -8,6 +8,9 @@ TagManager:
   - Ceiling
   - Wall
   - Door
+  - Laser
+  - Monster
+  - Hazard
   layers:
   - Default
   - TransparentFX
