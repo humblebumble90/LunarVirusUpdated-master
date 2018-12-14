@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4543618213642618}
   - component: {fileID: 212734237389749912}
   - component: {fileID: 61135357979341576}
+  - component: {fileID: 114477354775590898}
   - component: {fileID: 111563259649617112}
   m_Layer: 0
   m_Name: Shock
@@ -82,6 +83,21 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &114477354775590898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1821428474866440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa66ca081e45c6468c8bef2492d3e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionAsteroid: {fileID: 1821428474866440}
+  explosionPlayer: {fileID: 1546148998853910, guid: 44e483d6151965c42a8cad3c2d61a60f,
+    type: 2}
+  gameControllerScript: {fileID: 0}
 --- !u!212 &212734237389749912
 SpriteRenderer:
   m_ObjectHideFlags: 1
