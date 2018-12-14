@@ -70,7 +70,7 @@
      <Compile Include="Assets\Scripts\Pit.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerControllerP.cs" />
-     <None Include="Assets\Sprites\new-explosionb (1)\new-explosionb\explosion.txt" />
+     <None Include="Assets\sprites\new-explosionb (1)\new-explosionb\explosion.txt" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/DannyPC/Documents/GitHub/LunarVirusUpdated-master/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
