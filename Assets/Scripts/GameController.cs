@@ -42,14 +42,15 @@ public class GameController : MonoBehaviour
         if (restart)
         {
             if (Input.GetKeyDown(KeyCode.R))
-            {
-                // Restart our game
+            { 
+             // Restart our game
                 // THE OLD WAY. DON'T USE THIS.
                 // Application.LoadLevel("Level1");
                 // THE NEW WAY. USE THIS!
                 // SceneManager.LoadScene("Level1");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
+            
         }
         
         if (gameOver)
@@ -60,9 +61,11 @@ public class GameController : MonoBehaviour
             // restartText.text = "YOUR SUPER SECRET CUSTOM MESSAGE HERE";
             // Set restart boolean value to true
             restart = true;
-           
-            
-            
+            Debug.Log(restart);
+          
+
+
+
 
         }
        

@@ -75,7 +75,7 @@ public class PlayerControllerP : MonoBehaviour
     {
 
         
-            if (hp < 0)
+            if (hp <= 0)
             { Destroy(gameObject);
             gc.GetComponent<GameController>().GameOver();
             }
@@ -117,11 +117,9 @@ public class PlayerControllerP : MonoBehaviour
         hazard = GameObject.FindGameObjectsWithTag("Hazard");
         if (co.tag == "Hazard")
         {
-            hp = hp - 1;
-            Debug.Log(hp);
-            gc.GetComponent<GameController>().hpNumber(1);
-            
-            
+            hp = 0;
+            gc.GetComponent<GameController>().GameOver();
+
         }
        
 
