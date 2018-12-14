@@ -55,6 +55,7 @@ public class GameController : MonoBehaviour
         
         if (gameOver)
         {
+            
             // Active the Restart UI text
             restartText.enabled = true;
             // (Optional) Set Restart UI text
@@ -62,11 +63,7 @@ public class GameController : MonoBehaviour
             // Set restart boolean value to true
             restart = true;
             Debug.Log(restart);
-          
-
-
-
-
+        
         }
        
 
