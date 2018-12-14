@@ -95,22 +95,11 @@ public class PlayerControllerP : MonoBehaviour
        
 
         rb2d.velocity = new Vector2(horiz * speed, rb2d.velocity.y);
-        if (horiz > 0 && !facingRight)
-            flip();
-        else if (horiz < 0 && facingRight) 
-        flip();
+       
 
      
     }
-    void flip()
-    {
-        facingRight = !facingRight;
-        Vector3 thescale = transform.localScale;
-        thescale.x *= -1;
-        transform.localScale = thescale;
-
-
-    }
+   
     void OnTriggerEnter2D(Collider2D co)
     {
         gc = GameObject.FindGameObjectWithTag("GameController");
