@@ -649,7 +649,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 78957954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: -2, z: 0}
+  m_LocalPosition: {x: 198.1, y: -1, z: 0}
   m_LocalScale: {x: 4.3051105, y: 4.3051105, z: 4.3051105}
   m_Children:
   - {fileID: 1125335871}
@@ -2461,6 +2461,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4586637011055308, guid: c5b27778b1817104aa74cc9f2993e8e3,
     type: 2}
   m_PrefabInternal: {fileID: 591181358}
+--- !u!1 &333443370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1821428474866440, guid: 8d8c5cc81b8993d4cb5e07090e4bb640,
+    type: 2}
+  m_PrefabInternal: {fileID: 1489722009}
+--- !u!95 &333443371
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 333443370}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2c9ee1ec2d6d89d4f830b6e6bb4eae0e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &348122369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4586637011055308, guid: c5b27778b1817104aa74cc9f2993e8e3,
@@ -3341,6 +3364,29 @@ Transform:
   m_Father: {fileID: 1971268367}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &491491634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1821428474866440, guid: 8d8c5cc81b8993d4cb5e07090e4bb640,
+    type: 2}
+  m_PrefabInternal: {fileID: 497990134}
+--- !u!95 &491491635
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491491634}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b13a4610d404c42448f42dc4a78f6ea5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &496179988
 Prefab:
   m_ObjectHideFlags: 0
@@ -3448,8 +3494,13 @@ Prefab:
       propertyPath: m_RootOrder
       value: 26
       objectReference: {fileID: 0}
+    - target: {fileID: 1821428474866440, guid: 8d8c5cc81b8993d4cb5e07090e4bb640, type: 2}
+      propertyPath: m_Name
+      value: Shock behind door
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114477354775590898, guid: 8d8c5cc81b8993d4cb5e07090e4bb640, type: 2}
+    - {fileID: 111563259649617112, guid: 8d8c5cc81b8993d4cb5e07090e4bb640, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 8d8c5cc81b8993d4cb5e07090e4bb640, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &516260764 stripped
@@ -9534,7 +9585,8 @@ Prefab:
       propertyPath: m_Animation
       value: 
       objectReference: {fileID: 7400000, guid: 8635d24617f207c4ea22d666751cb4a0, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 111563259649617112, guid: 8d8c5cc81b8993d4cb5e07090e4bb640, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 8d8c5cc81b8993d4cb5e07090e4bb640, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1492404889
