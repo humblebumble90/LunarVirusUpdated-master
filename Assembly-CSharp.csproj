@@ -69,7 +69,9 @@
     <Compile Include="Assets\Scripts\DestroybycontactP.cs" />
     <Compile Include="Assets\Scripts\DestroyObject.cs" />
     <Compile Include="Assets\Scripts\DestroyObjectD.cs" />
+    <Compile Include="Assets\Scripts\EnemyLaserDestroyer.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\Healingshot.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\LaserDestroyer.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />

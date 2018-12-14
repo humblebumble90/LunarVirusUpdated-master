@@ -11,6 +11,7 @@ TagManager:
   - Laser
   - Monster
   - Hazard
+  - EnemyLaser
   layers:
   - Default
   - TransparentFX

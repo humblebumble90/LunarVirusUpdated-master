@@ -75,14 +75,18 @@ public class GameController : MonoBehaviour
         // Debug.Log("Score: " + score);
         UpdateScore();
     }
+    public void AddHp()
+    {
+        hp = hp + 30;
+    }
 
     void hpTextnumber()
     {
         hpText.text = "Hp : " + hp;
     }
-    public void hpNumber(int newHpValue)
+    public void hpNumber(int newHpValue2)
     {
-        hp -= newHpValue;
+        hp -= newHpValue2;
         hpTextnumber();
     }
     void UpdateScore()

@@ -26,11 +26,13 @@ public class PlayerControllerP : MonoBehaviour
 
     private Rigidbody2D rb2d;
     private float myTime = 0f;
+    Vector2 direction = Vector2.zero;
 
 
     // Use this for initialization
     void Start()
     {
+        
       
         rb2d = GetComponent<Rigidbody2D>();
         hp = 100;
@@ -42,6 +44,7 @@ public class PlayerControllerP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
         if(grounded && Input.GetButtonDown("Jump"))
         {
             rb2d.AddForce(new Vector2(0, jumpForce));
@@ -61,6 +64,7 @@ public class PlayerControllerP : MonoBehaviour
 
 
         }
+       
         
         
 
@@ -76,9 +80,10 @@ public class PlayerControllerP : MonoBehaviour
 
         
             if (hp <= 0)
-            { Destroy(gameObject);
+            {
             gc.GetComponent<GameController>().GameOver();
-            }
+            Destroy(gameObject);
+        }
 
 
 
@@ -88,18 +93,20 @@ public class PlayerControllerP : MonoBehaviour
             grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
                                            
         float horiz = Input.GetAxis("Horizontal");
+        float vertic = Input.GetAxis("Vertical");
 
       
-        Vector2 movement = new Vector2(horiz, 0);
+        
 
        
 
-        rb2d.velocity = new Vector2(horiz * speed, rb2d.velocity.y);
+        rb2d.velocity = new Vector3(horiz * speed, rb2d.velocity.y);
        
 
      
     }
    
+
     void OnTriggerEnter2D(Collider2D co)
     {
         gc = GameObject.FindGameObjectWithTag("GameController");
@@ -109,6 +116,11 @@ public class PlayerControllerP : MonoBehaviour
             hp = 0;
             gc.GetComponent<GameController>().GameOver();
 
+        }
+        if (co.tag == "EnemyLaser")
+        {
+            hp = hp - 10;
+            gc.GetComponent<GameController>().hpNumber(10);
         }
        
 

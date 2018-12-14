@@ -13,7 +13,7 @@ public class openDoor : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(getkey);
+   
 	}
     public void havingKey()
     {
